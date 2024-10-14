@@ -1,0 +1,4 @@
+sleipnirgroup-jormungandr
+casadi
+matplotlib
+scicy
