@@ -12,8 +12,13 @@ def calculate_derivatives_no_control(angle, velocity):
 # Calculate derivatives
 def calculate_derivatives(angle, velocity, control_torque):
     cos = jcos if type(angle) == jvar else npcos
+    FRICTION_COEFFICIENT = 3.0
     d_angle_dt = velocity
-    d_velocity_dt = (GRAVITY / LENGTH) * cos(angle) + control_torque / (MASS * LENGTH**2)
+    d_velocity_dt = (
+        (GRAVITY / LENGTH) * cos(angle)
+        - FRICTION_COEFFICIENT * velocity
+        + control_torque / (MASS * LENGTH**2)
+    )
     return d_angle_dt, d_velocity_dt
 
 # Calculate next state

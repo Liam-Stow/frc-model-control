@@ -27,8 +27,8 @@ for k in range(STEP_COUNT):
     problem.subject_to(angles[k+1] == next_angle)
     problem.subject_to(vels[k+1] == next_vel)
 
-problem.subject_to(efforts <= 20.0)
-problem.subject_to(efforts >= -20.0)
+problem.subject_to(efforts <= 30.0)
+problem.subject_to(efforts >= -30.0)
 problem.subject_to(angles[-1] == TARGET_ANGLE)
 problem.subject_to(vels[-1] == 0.0)
 

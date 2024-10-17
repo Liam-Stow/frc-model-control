@@ -8,8 +8,8 @@ TARGET_ANGLE = 0
 TIME_STEP = 0.05
 TOTAL_SECONDS: float = 5.0
 STEP_COUNT = int(TOTAL_SECONDS / TIME_STEP)
-initial_angle = -2 * np.pi  # initial angle (pointed down)
-initial_velocity = 0        # initial velocity (not moving)
+initial_angle = 0  # initial angle (pointed straight to the right)
+initial_velocity = 0 # initial velocity (not moving)
 
 # Solve the ODE using solve_ivp
 solution = solve_ivp(

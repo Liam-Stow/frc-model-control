@@ -25,7 +25,7 @@ for k in range(STEP_COUNT):
     opti.subject_to(angles[k+1] == next_angle)
     opti.subject_to(velocities[k+1] == next_vel)
 
-opti.subject_to(opti.bounded(-20, control_torques, 20)) 
+opti.subject_to(opti.bounded(-30, control_torques, 30)) 
 opti.subject_to(angles[-1] == TARGET_ANGLE)  # final angle = target
 opti.subject_to(velocities[-1] == 0)  # final velocity = 0
 
