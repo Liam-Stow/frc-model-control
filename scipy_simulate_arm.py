@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 import arm_dynamics
 
 # Parameters
-TARGET_ANGLE = 0
 TIME_STEP = 0.05
 TOTAL_SECONDS: float = 5.0
 STEP_COUNT = int(TOTAL_SECONDS / TIME_STEP)
