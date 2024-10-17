@@ -1,29 +1,22 @@
 import numpy as np
 from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
+import arm_dynamics
 
 # Parameters
-G = -9.81  # gravity
-L = 1.0    # length of the pendulum
-M = 2.0    # mass of the pendulum
-T = 25.0   # total simulation time
+TARGET_ANGLE = 0
+TIME_STEP = 0.05
+TOTAL_SECONDS: float = 5.0
+STEP_COUNT = int(TOTAL_SECONDS / TIME_STEP)
 initial_angle = -2 * np.pi  # initial angle (pointed down)
 initial_velocity = 0        # initial velocity (not moving)
 
-# Define the system dynamics
-def pendulum_dynamics(t, y):
-    angle, velocity = y
-    # Equation of motion: d²θ/dt² = (g/L) * cos(θ)
-    d_angle_dt = velocity
-    d_velocity_dt = (G / L) * np.cos(angle)
-    return [d_angle_dt, d_velocity_dt]
-
 # Solve the ODE using solve_ivp
 solution = solve_ivp(
-    pendulum_dynamics, 
-    [0, T], 
+    lambda t,state: arm_dynamics.calculate_derivatives(state[0], state[1], 0),
+    [0.0, TOTAL_SECONDS], 
     [initial_angle, initial_velocity], 
-    t_eval=np.linspace(0, T, 500),  # Time points for evaluation
+    t_eval=np.linspace(0, TOTAL_SECONDS, STEP_COUNT+1),  # Time points for evaluation
     method='RK45'
 )
 
