@@ -7,8 +7,8 @@ import arm_dynamics
 
 # Parameters
 TARGET_ANGLE = 0
-TOTAL_SECONDS = 5.0  
-TIME_STEP = 0.05  
+TOTAL_SECONDS = 0.5  
+TIME_STEP = 0.005  
 STEP_COUNT = int(TOTAL_SECONDS / TIME_STEP)
 
 problem = OptimizationProblem()
@@ -19,16 +19,16 @@ angles = states[:, 0]
 vels = states[:, 1]
 
 # Constraints
-problem.subject_to(angles[0] == -2*np.pi) # initial angle (pointed down)
+problem.subject_to(angles[0] == -np.pi/2.0) # initial angle (pointed down)
 problem.subject_to(vels[0] == 0.0) # initial velocity (not moving)
 
 for k in range(STEP_COUNT):
-    next_angle, next_vel = arm_dynamics.next_state(angles[k], vels[k], efforts[k], TIME_STEP)
+    next_angle, next_vel = arm_dynamics.next_state_with_torque(angles[k], vels[k], efforts[k], TIME_STEP)
     problem.subject_to(angles[k+1] == next_angle)
     problem.subject_to(vels[k+1] == next_vel)
 
-problem.subject_to(efforts <= 30.0)
-problem.subject_to(efforts >= -30.0)
+problem.subject_to(efforts <= 77.6)
+problem.subject_to(efforts >= -77.6)
 problem.subject_to(angles[-1] == TARGET_ANGLE)
 problem.subject_to(vels[-1] == 0.0)
 
@@ -52,8 +52,7 @@ target_angles = [TARGET_ANGLE] * (STEP_COUNT+1)
 plt.figure()
 plt.plot(time, solved_angles, label='angle (rad)')
 plt.plot(time, target_angles, label='target angle (rad)')
-plt.plot(time[:-1], solved_efforts, label='effort (N)')
+# plt.plot(time[:-1], solved_efforts, label='effort (N)')
 plt.xlabel('Time [s]')
-plt.ylabel('States / Control')
 plt.legend(loc='upper right')
 plt.show()

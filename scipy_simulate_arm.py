@@ -13,7 +13,7 @@ initial_velocity = 0 # initial velocity (not moving)
 
 # Solve the ODE using solve_ivp
 solution = solve_ivp(
-    lambda t,state: arm_dynamics.calculate_derivatives(state[0], state[1], 0),
+    lambda t,state: arm_dynamics.calc_derivatives(state[0], state[1], 0),
     [0.0, TOTAL_SECONDS], 
     [initial_angle, initial_velocity], 
     t_eval=np.linspace(0, TOTAL_SECONDS, STEP_COUNT+1),  # Time points for evaluation
