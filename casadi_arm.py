@@ -25,10 +25,10 @@ for k in range(STEP_COUNT):
     next_angle, next_vel = arm_dynamics.next_state_with_voltage(angles[k], velocities[k], control_voltages[k], TIME_STEP)
     opti.subject_to(angles[k+1] == next_angle)
     opti.subject_to(velocities[k+1] == next_vel)
-    opti.subject_to(control_currents[k] == arm_dynamics.calc_current(control_voltages[k], velocities[k]))
+    opti.subject_to(control_currents[k] == arm_dynamics.motor.calc_current_from_velocity_voltage(velocities[k], control_voltages[k]))
 
-opti.subject_to(opti.bounded(-10, control_voltages, 10)) 
-opti.subject_to(opti.bounded(-200, control_currents, 200))
+opti.subject_to(opti.bounded(-12, control_voltages, 12)) 
+opti.subject_to(opti.bounded(-480, control_currents, 480))
 opti.subject_to(angles[-1] == TARGET_ANGLE)  # final angle = target
 opti.subject_to(velocities[-1] == 0)  # final velocity = 0
 
@@ -48,11 +48,19 @@ solved_control_currents = solution.value(control_currents)
 # Plot the results
 time = np.linspace(0, TOTAL_SECONDS, STEP_COUNT+1)
 target_angles = [TARGET_ANGLE] * (STEP_COUNT+1)
-plt.figure()
-plt.plot(time, solved_angles, label='angle (rad)')
-plt.plot(time, target_angles, label='target angle (rad)')
-# plt.plot(time[:-1], solved_control_voltages, label='voltage')
-# plt.plot(time[:-1], solved_control_currents, label='current')
-plt.xlabel('Time [s]')
-plt.legend(loc='upper right')
+fig, ax1 = plt.subplots()
+
+ax1.set_xlabel('Time [s]')
+ax1.set_ylabel('angle (rad)')
+ax1.plot(time, solved_angles, label='angle (rad)')
+ax1.plot(time, target_angles, label='target angle (rad)')
+ax1.legend(loc='upper right')
+
+ax2 = ax1.twinx()
+ax2.set_ylabel('current / voltage')
+ax2.plot(time[:-1], solved_control_voltages, label='voltage')
+ax2.plot(time[:-1], solved_control_currents, label='current')
+ax2.legend(loc='lower right')
+
 plt.show()
+

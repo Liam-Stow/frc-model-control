@@ -27,8 +27,8 @@ for k in range(STEP_COUNT):
     problem.subject_to(angles[k+1] == next_angle)
     problem.subject_to(vels[k+1] == next_vel)
 
-problem.subject_to(efforts <= 77.6)
-problem.subject_to(efforts >= -77.6)
+problem.subject_to(efforts <= 93.7)
+problem.subject_to(efforts >= -93.7)
 problem.subject_to(angles[-1] == TARGET_ANGLE)
 problem.subject_to(vels[-1] == 0.0)
 
@@ -49,10 +49,14 @@ solved_efforts = [e.value() for e in efforts]
 # Plot the results
 time = np.linspace(0, TOTAL_SECONDS, STEP_COUNT+1)
 target_angles = [TARGET_ANGLE] * (STEP_COUNT+1)
-plt.figure()
-plt.plot(time, solved_angles, label='angle (rad)')
-plt.plot(time, target_angles, label='target angle (rad)')
-# plt.plot(time[:-1], solved_efforts, label='effort (N)')
-plt.xlabel('Time [s]')
-plt.legend(loc='upper right')
+fig, ax1 = plt.subplots()
+ax1.set_xlabel('Time [s]')
+ax1.plot(time, solved_angles, label='angle (rad)')
+ax1.plot(time, target_angles, label='target angle (rad)')
+ax1.legend(loc='upper right')
+
+ax2 = ax1.twinx()
+ax2.plot(time[:-1], solved_efforts, label='effort (N)')
+ax2.legend(loc='lower right')
+
 plt.show()
