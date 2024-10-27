@@ -1,0 +1,802 @@
+[
+    {
+        "time": 0.0,
+        "angle": -1.5707963267948966,
+        "velocity": 0.0,
+        "control_voltage": 11.925465945110021,
+        "control_current": 480.00000429067836,
+        "control_torque": 93.11801325473407
+    },
+    {
+        "time": 0.005,
+        "angle": -1.5707963267948966,
+        "velocity": 0.6983850994105055,
+        "control_voltage": 11.939855459144244,
+        "control_current": 480.00000424294126,
+        "control_torque": 93.11801324547328
+    },
+    {
+        "time": 0.01,
+        "angle": -1.567304401297844,
+        "velocity": 1.396770198751555,
+        "control_voltage": 11.95424497300549,
+        "control_current": 480.00000418829944,
+        "control_torque": 93.11801323487299
+    },
+    {
+        "time": 0.015,
+        "angle": -1.5603205503040862,
+        "velocity": 2.094641462220459,
+        "control_voltage": 11.96862389959608,
+        "control_current": 480.000004125418,
+        "control_torque": 93.11801322267425
+    },
+    {
+        "time": 0.02,
+        "angle": -1.549847342992984,
+        "velocity": 2.791485079074452,
+        "control_voltage": 11.98298165232643,
+        "control_current": 480.0000040526305,
+        "control_torque": 93.11801320855378
+    },
+    {
+        "time": 0.025,
+        "angle": -1.5358899175976115,
+        "velocity": 3.4867877606419486,
+        "control_voltage": 11.9973076553528,
+        "control_current": 480.0000039678317,
+        "control_torque": 93.11801319210315
+    },
+    {
+        "time": 0.03,
+        "angle": -1.5184559787944019,
+        "velocity": 4.180037424502426,
+        "control_voltage": 12.000000096881578,
+        "control_current": 479.5334556215772,
+        "control_torque": 93.027504744807
+    },
+    {
+        "time": 0.035,
+        "angle": -1.4975557916718898,
+        "velocity": 4.870045343965045,
+        "control_voltage": 12.000000093998425,
+        "control_current": 478.9612247999069,
+        "control_torque": 92.91649433488877
+    },
+    {
+        "time": 0.04,
+        "angle": -1.4732055649520643,
+        "velocity": 5.556151339411738,
+        "control_voltage": 12.00000009056818,
+        "control_current": 478.3922298621675,
+        "control_torque": 92.806111673054
+    },
+    {
+        "time": 0.045,
+        "angle": -1.4454248082550059,
+        "velocity": 6.237859480268258,
+        "control_voltage": 12.000000086449093,
+        "control_current": 477.8268820830087,
+        "control_torque": 92.69643654488179
+    },
+    {
+        "time": 0.05,
+        "angle": -1.4142355108536646,
+        "velocity": 6.914682626196807,
+        "control_voltage": 12.000000081451072,
+        "control_current": 477.26558544530104,
+        "control_torque": 92.58754732137619
+    },
+    {
+        "time": 0.055,
+        "angle": -1.3796620977226806,
+        "velocity": 7.586145306634291,
+        "control_voltage": 12.0000000753145,
+        "control_current": 476.70873425125154,
+        "control_torque": 92.47952049553264
+    },
+    {
+        "time": 0.06,
+        "angle": -1.3417313711895091,
+        "velocity": 8.251787243583808,
+        "control_voltage": 12.00000006767716,
+        "control_current": 476.1567101995853,
+        "control_torque": 92.37243011532327
+    },
+    {
+        "time": 0.065,
+        "angle": -1.30047243497159,
+        "velocity": 8.911167560001175,
+        "control_voltage": 12.000000058020957,
+        "control_current": 475.6098788933425,
+        "control_torque": 92.26634710622399
+    },
+    {
+        "time": 0.07,
+        "angle": -1.2559165971715842,
+        "velocity": 9.563869700470633,
+        "control_voltage": 12.000000045582555,
+        "control_current": 475.06858575551445,
+        "control_torque": 92.1613384788648
+    },
+    {
+        "time": 0.075,
+        "angle": -1.2080972486692312,
+        "velocity": 10.209507072641438,
+        "control_voltage": 12.000000029196254,
+        "control_current": 474.53315134421723,
+        "control_torque": 92.05746642019285
+    },
+    {
+        "time": 0.08,
+        "angle": -1.157049713306024,
+        "velocity": 10.847729397105518,
+        "control_voltage": 12.000000007001079,
+        "control_current": 474.00386607488343,
+        "control_torque": 91.95478726959954
+    },
+    {
+        "time": 0.085,
+        "angle": -1.1028110663204964,
+        "velocity": 11.478229730163298,
+        "control_voltage": 11.999999975853456,
+        "control_current": 473.48098437256965,
+        "control_torque": 91.85335038449227
+    },
+    {
+        "time": 0.09,
+        "angle": -1.04541991766968,
+        "velocity": 12.100752098519385,
+        "control_voltage": 11.999999930032914,
+        "control_current": 472.9647182883285,
+        "control_torque": 91.75319690189725
+    },
+    {
+        "time": 0.095,
+        "angle": -0.984916157177083,
+        "velocity": 12.71509965778776,
+        "control_voltage": 11.9999998580033,
+        "control_current": 472.4552306029157,
+        "control_torque": 91.65435840060704
+    },
+    {
+        "time": 0.1,
+        "angle": -0.9213406588881442,
+        "velocity": 13.321143258316605,
+        "control_voltage": 11.999999732692334,
+        "control_current": 471.9526273318143,
+        "control_torque": 91.55685544718632
+    },
+    {
+        "time": 0.105,
+        "angle": -0.8547349425965611,
+        "velocity": 13.918830272848691,
+        "control_voltage": 11.999999472605152,
+        "control_current": 471.45694883918463,
+        "control_torque": 91.4606958721151
+    },
+    {
+        "time": 0.11,
+        "angle": -0.7851407912323177,
+        "velocity": 14.508193510895827,
+        "control_voltage": 11.999998669617936,
+        "control_current": 470.96815148877556,
+        "control_torque": 91.36587121014134
+    },
+    {
+        "time": 0.115,
+        "angle": -0.7125998236778386,
+        "velocity": 15.089360005796648,
+        "control_voltage": 1.6868017394991706,
+        "control_current": 55.380007665206804,
+        "control_torque": 10.743492170248192
+    },
+    {
+        "time": 0.12,
+        "angle": -0.6371530236488553,
+        "velocity": 15.058592992043494,
+        "control_voltage": -11.615197102177403,
+        "control_current": -479.99993030949037,
+        "control_torque": -93.11799890268995
+    },
+    {
+        "time": 0.125,
+        "angle": -0.5618600586886378,
+        "velocity": 14.241929903543449,
+        "control_voltage": -11.632024412113994,
+        "control_current": -479.99996238690625,
+        "control_torque": -93.11800512557579
+    },
+    {
+        "time": 0.13,
+        "angle": -0.49065040917092057,
+        "velocity": 13.419016880824618,
+        "control_voltage": -11.648979947594707,
+        "control_current": -479.9999724073708,
+        "control_torque": -93.11800706950443
+    },
+    {
+        "time": 0.135,
+        "angle": -0.42355532476679747,
+        "velocity": 12.590841617643708,
+        "control_voltage": -11.666043765990318,
+        "control_current": -479.99997678470794,
+        "control_torque": -93.11800791868971
+    },
+    {
+        "time": 0.14,
+        "angle": -0.3606011166785789,
+        "velocity": 11.758309695841733,
+        "control_voltage": -11.683197289436952,
+        "control_current": -479.9999787682854,
+        "control_torque": -93.11800830349553
+    },
+    {
+        "time": 0.145,
+        "angle": -0.30180956819937027,
+        "velocity": 10.922238601018368,
+        "control_voltage": -11.700423700416753,
+        "control_current": -479.9999794022741,
+        "control_torque": -93.11800842648671
+    },
+    {
+        "time": 0.15,
+        "angle": -0.24719837519427845,
+        "velocity": 10.08335469408333,
+        "control_voltage": -11.717708042937812,
+        "control_current": -479.999979086616,
+        "control_torque": -93.11800836525035
+    },
+    {
+        "time": 0.155,
+        "angle": -0.1967816017238618,
+        "velocity": 9.24229273363576,
+        "control_voltage": -11.735037241910952,
+        "control_current": -479.9999779608447,
+        "control_torque": -93.11800814685537
+    },
+    {
+        "time": 0.16,
+        "angle": -0.150570138055683,
+        "velocity": 8.39959753539862,
+        "control_voltage": -11.752400071906981,
+        "control_current": -479.9999760227504,
+        "control_torque": -93.11800777087309
+    },
+    {
+        "time": 0.165,
+        "angle": -0.1085721503786899,
+        "velocity": 7.555727373879491,
+        "control_voltage": -11.769787087901282,
+        "control_current": -479.99997316188177,
+        "control_torque": -93.11800721587643
+    },
+    {
+        "time": 0.17,
+        "angle": -0.07079351350929244,
+        "velocity": 6.711058763741489,
+        "control_voltage": -11.787190526591564,
+        "control_current": -479.9999691528271,
+        "control_torque": -93.11800643813642
+    },
+    {
+        "time": 0.17500000000000002,
+        "angle": -0.037238219690584995,
+        "velocity": 5.86589229889374,
+        "control_voltage": -11.804604185108357,
+        "control_current": -479.99996361572846,
+        "control_torque": -93.11800536396221
+    },
+    {
+        "time": 0.18,
+        "angle": -0.007908758196116299,
+        "velocity": 5.020459272224005,
+        "control_voltage": -11.82202328253928,
+        "control_current": -479.99995593244705,
+        "control_torque": -93.11800387343744
+    },
+    {
+        "time": 0.185,
+        "angle": 0.017193538165003727,
+        "velocity": 4.174928845151775,
+        "control_voltage": -11.839444308164303,
+        "control_current": -479.99994508381667,
+        "control_torque": -93.11800176884806
+    },
+    {
+        "time": 0.19,
+        "angle": 0.0380681823907626,
+        "velocity": 3.3294155814257604,
+        "control_voltage": -11.856864858200744,
+        "control_current": -479.9999293264865,
+        "control_torque": -93.11799871199126
+    },
+    {
+        "time": 0.195,
+        "angle": 0.05471526029789141,
+        "velocity": 2.483987202107299,
+        "control_voltage": -11.87428345906667,
+        "control_current": -479.9999055105604,
+        "control_torque": -93.11799409180021
+    },
+    {
+        "time": 0.2,
+        "angle": 0.0671351963084279,
+        "velocity": 1.6386724573427884,
+        "control_voltage": -11.891699366083255,
+        "control_current": -479.9998675055095,
+        "control_torque": -93.1179867189777
+    },
+    {
+        "time": 0.20500000000000002,
+        "angle": 0.07532855859514184,
+        "velocity": 0.7934690448441019,
+        "control_voltage": -11.909112298438508,
+        "control_current": -479.9998020993396,
+        "control_torque": -93.11797403045158
+    },
+    {
+        "time": 0.21,
+        "angle": 0.07929590381936236,
+        "velocity": -0.05164846439332894,
+        "control_voltage": -11.926521959214744,
+        "control_current": -479.9996762525776,
+        "control_torque": -93.11794961670087
+    },
+    {
+        "time": 0.215,
+        "angle": 0.07903766149739572,
+        "velocity": -0.8967207010242185,
+        "control_voltage": -11.943926572555117,
+        "control_current": -479.99938479156305,
+        "control_torque": -93.11789307447091
+    },
+    {
+        "time": 0.22,
+        "angle": 0.07455405799227462,
+        "velocity": -1.7417955188130143,
+        "control_voltage": -11.96131347871179,
+        "control_current": -479.9983784758236,
+        "control_torque": -93.1176978533844
+    },
+    {
+        "time": 0.225,
+        "angle": 0.06584508039820955,
+        "velocity": -2.5869194896233076,
+        "control_voltage": -10.45594251086089,
+        "control_current": -418.7063269681702,
+        "control_torque": -81.22729365821436
+    },
+    {
+        "time": 0.23,
+        "angle": 0.05291048295009301,
+        "velocity": -3.342955317391861,
+        "control_voltage": 11.856507122185343,
+        "control_current": 479.99675909496955,
+        "control_torque": 93.11738370020423
+    },
+    {
+        "time": 0.23500000000000001,
+        "angle": 0.03619570636313371,
+        "velocity": -2.791519013063135,
+        "control_voltage": 11.86788838706143,
+        "control_current": 479.99754317453875,
+        "control_torque": 93.11753580839394
+    },
+    {
+        "time": 0.24,
+        "angle": 0.022238111297818032,
+        "velocity": -2.2401911122707685,
+        "control_voltage": 11.879242889924106,
+        "control_current": 479.9973399832422,
+        "control_torque": 93.11749639012379
+    },
+    {
+        "time": 0.245,
+        "angle": 0.01103715573646419,
+        "velocity": -1.6889235055352327,
+        "control_voltage": 11.89057873810521,
+        "control_current": 479.9964359434976,
+        "control_torque": 93.11732101015677
+    },
+    {
+        "time": 0.25,
+        "angle": 0.0025925382087880256,
+        "velocity": -1.1376846352320311,
+        "control_voltage": 11.901879057824967,
+        "control_current": 479.99412571460425,
+        "control_torque": 93.11687283531762
+    },
+    {
+        "time": 0.255,
+        "angle": -0.00309588496737213,
+        "velocity": -0.5864575944528684,
+        "control_voltage": 11.913063528728777,
+        "control_current": 479.98716238121574,
+        "control_torque": 93.11552197747393
+    },
+    {
+        "time": 0.26,
+        "angle": -0.006028172939636472,
+        "velocity": -0.03524047444575181,
+        "control_voltage": 11.92318721932807,
+        "control_current": 479.93751086796937,
+        "control_torque": 93.10588978950047
+    },
+    {
+        "time": 0.265,
+        "angle": -0.006204375311865231,
+        "velocity": 0.5159063725944744,
+        "control_voltage": 6.040160327809401,
+        "control_current": 242.68860670257334,
+        "control_torque": 47.08058477853234
+    },
+    {
+        "time": 0.27,
+        "angle": -0.00362484344889286,
+        "velocity": 0.7218635906328319,
+        "control_voltage": -9.720461253680039,
+        "control_current": -391.8472144038878,
+        "control_torque": -76.016737038601
+    },
+    {
+        "time": 0.275,
+        "angle": -1.5525495728700404e-05,
+        "velocity": 0.004589029568791984,
+        "control_voltage": 2.4091533383305617,
+        "control_current": 96.964616138111,
+        "control_torque": 18.81073402099586
+    },
+    {
+        "time": 0.28,
+        "angle": 7.419652115259512e-06,
+        "velocity": -0.001480465518596868,
+        "control_voltage": 2.5378788826160905,
+        "control_current": 102.15085279066739,
+        "control_torque": 19.816842456491788
+    },
+    {
+        "time": 0.28500000000000003,
+        "angle": 1.732452227517098e-08,
+        "velocity": -4.147148380264265e-06,
+        "control_voltage": 2.51278244112803,
+        "control_current": 101.13949669467627,
+        "control_torque": 19.62064356167943
+    },
+    {
+        "time": 0.29,
+        "angle": -3.411219626150131e-09,
+        "velocity": 6.795638148563931e-07,
+        "control_voltage": 2.5126885677484068,
+        "control_current": 101.13571428830407,
+        "control_torque": 19.619909790505364
+    },
+    {
+        "time": 0.295,
+        "angle": -1.3400551868180119e-11,
+        "velocity": 2.9925940848784605e-09,
+        "control_voltage": 2.5127000503791703,
+        "control_current": 101.13617702527982,
+        "control_torque": 19.61999955956256
+    },
+    {
+        "time": 0.3,
+        "angle": 1.5624185562238306e-12,
+        "velocity": -3.106913930975611e-10,
+        "control_voltage": 2.5127001119894463,
+        "control_current": 101.13617950783288,
+        "control_torque": 19.620000041167575
+    },
+    {
+        "time": 0.305,
+        "angle": 8.961590738010324e-15,
+        "velocity": -1.934744024451057e-12,
+        "control_voltage": 2.5127001067590085,
+        "control_current": 101.13617929705168,
+        "control_torque": 19.620000000276896
+    },
+    {
+        "time": 0.31,
+        "angle": -7.121293838148265e-16,
+        "velocity": 1.4197361745050039e-13,
+        "control_voltage": 2.5127001067211827,
+        "control_current": 101.13617929552748,
+        "control_torque": 19.61999999998121
+    },
+    {
+        "time": 0.315,
+        "angle": -2.2612975549413264e-18,
+        "velocity": 1.0161317461079519e-15,
+        "control_voltage": 2.5127001067235626,
+        "control_current": 101.13617929562339,
+        "control_torque": 19.619999999999816
+    },
+    {
+        "time": 0.32,
+        "angle": 2.8193611590548207e-18,
+        "velocity": -3.7840206948828764e-16,
+        "control_voltage": 2.512700106723589,
+        "control_current": 101.13617929562444,
+        "control_torque": 19.62000000000002
+    },
+    {
+        "time": 0.325,
+        "angle": 9.273509439622805e-19,
+        "velocity": -2.5596562748460587e-16,
+        "control_voltage": 2.512700106723589,
+        "control_current": 101.13617929562444,
+        "control_torque": 19.62000000000002
+    },
+    {
+        "time": 0.33,
+        "angle": -3.524770652477539e-19,
+        "velocity": -1.2178539130459844e-16,
+        "control_voltage": 2.512700106723588,
+        "control_current": 101.13617929562443,
+        "control_torque": 19.620000000000015
+    },
+    {
+        "time": 0.335,
+        "angle": -9.614041086247104e-19,
+        "velocity": -1.0896413813214081e-17,
+        "control_voltage": 2.5127001067235875,
+        "control_current": 101.1361792956244,
+        "control_torque": 19.62000000000001
+    },
+    {
+        "time": 0.34,
+        "angle": -1.0158861528753624e-18,
+        "velocity": 5.013032149426568e-17,
+        "control_voltage": 2.5127001067235866,
+        "control_current": 101.13617929562437,
+        "control_torque": 19.620000000000005
+    },
+    {
+        "time": 0.34500000000000003,
+        "angle": -7.652345040450034e-19,
+        "velocity": 6.488079146576848e-17,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562434,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.35000000000000003,
+        "angle": -4.408305012212273e-19,
+        "velocity": 5.172110230876846e-17,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562433,
+        "control_torque": 19.619999999999997
+    },
+    {
+        "time": 0.355,
+        "angle": -1.8222509721086463e-19,
+        "velocity": 2.8847063594949785e-17,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562434,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.36,
+        "angle": -3.7989743046963906e-20,
+        "velocity": 1.0894289613401045e-17,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562433,
+        "control_torque": 19.619999999999997
+    },
+    {
+        "time": 0.365,
+        "angle": 1.6481702952089788e-20,
+        "velocity": 1.6760618948860778e-18,
+        "control_voltage": 2.5127001067235866,
+        "control_current": 101.13617929562436,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.37,
+        "angle": 2.4862011909532294e-20,
+        "velocity": -1.4235972729481556e-18,
+        "control_voltage": 2.5127001067235866,
+        "control_current": 101.13617929562436,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.375,
+        "angle": 1.7744029034459725e-20,
+        "velocity": -1.2360977619589232e-18,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562436,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.38,
+        "angle": 1.156354229261664e-20,
+        "velocity": -4.2704305477119343e-19,
+        "control_voltage": 2.5127001067235866,
+        "control_current": 101.13617929562436,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.385,
+        "angle": 9.428325790914451e-21,
+        "velocity": 3.779837998212859e-20,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562434,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.39,
+        "angle": 9.617318789424345e-21,
+        "velocity": 1.8303144321173898e-19,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562434,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.395,
+        "angle": 1.0532474583766362e-20,
+        "velocity": -1.2388685326676403e-19,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562434,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.4,
+        "angle": 9.913040705173454e-21,
+        "velocity": -4.0777791490725685e-19,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562434,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.405,
+        "angle": 7.87415197074248e-21,
+        "velocity": -2.2129614626419434e-19,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562436,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.41000000000000003,
+        "angle": 6.767671885656362e-21,
+        "velocity": -5.268324695083656e-19,
+        "control_voltage": 2.5127001067235866,
+        "control_current": 101.13617929562436,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.41500000000000004,
+        "angle": 4.1335095704262764e-21,
+        "velocity": -2.8219980040524866e-19,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562436,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.42,
+        "angle": 2.7225111015437873e-21,
+        "velocity": -2.9050877795955554e-19,
+        "control_voltage": 2.5127001067235866,
+        "control_current": 101.13617929562436,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.425,
+        "angle": 1.269967203668074e-21,
+        "velocity": -3.0512128537182277e-19,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562434,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.43,
+        "angle": -2.5563922420078183e-22,
+        "velocity": 5.052212386320755e-20,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562434,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.435,
+        "angle": -3.0286200308734756e-24,
+        "velocity": -2.2733491370265236e-19,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562436,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.44,
+        "angle": -1.139703220855878e-21,
+        "velocity": 1.449214968469424e-19,
+        "control_voltage": 2.5127001067235866,
+        "control_current": 101.13617929562434,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.445,
+        "angle": -4.1509573056271417e-22,
+        "velocity": 4.427339148965457e-20,
+        "control_voltage": 2.5127001067235866,
+        "control_current": 101.13617929562436,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.45,
+        "angle": -1.9372878927031265e-22,
+        "velocity": -2.0498895580313337e-19,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562434,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.455,
+        "angle": -1.2186734228831374e-21,
+        "velocity": 2.0144607984725766e-19,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562434,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.46,
+        "angle": -2.1144299537407428e-22,
+        "velocity": -1.8485819404637991e-19,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562434,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.465,
+        "angle": -1.1357337232679038e-21,
+        "velocity": -2.387697680177059e-19,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562434,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.47000000000000003,
+        "angle": -2.329582135225843e-21,
+        "velocity": -1.1785565970078969e-20,
+        "control_voltage": 2.5127001067235866,
+        "control_current": 101.13617929562436,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.47500000000000003,
+        "angle": -2.3885106759345766e-21,
+        "velocity": -9.677263534440298e-20,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562434,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.48,
+        "angle": -2.872373771877235e-21,
+        "velocity": 9.590623603105728e-19,
+        "control_voltage": 2.5127001067235866,
+        "control_current": 101.13617929562436,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.485,
+        "angle": 1.922938449728284e-21,
+        "velocity": 1.891136298775378e-18,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562434,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.49,
+        "angle": 1.137862218927129e-20,
+        "velocity": 2.086878250978395e-18,
+        "control_voltage": 2.512700106723586,
+        "control_current": 101.13617929562434,
+        "control_torque": 19.62
+    },
+    {
+        "time": 0.495,
+        "angle": 2.1813011246964763e-20,
+        "velocity": -4.362602662983259e-18,
+        "control_voltage": 2.5127001067235866,
+        "control_current": 101.13617929562434,
+        "control_torque": 19.62
+    }
+]

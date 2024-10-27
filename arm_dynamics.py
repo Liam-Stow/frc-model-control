@@ -6,7 +6,6 @@ from motor import Motor
 GRAVITY = -9.81  
 LENGTH = 1.0 
 MASS = 2.0
-COM_DISTANCE = LENGTH/2.0
 MOI = 1.0/3.0 * MASS * LENGTH**2
 GEARING = 10.0
 motor = Motor.KrakenX60FOC().with_reduction(GEARING)

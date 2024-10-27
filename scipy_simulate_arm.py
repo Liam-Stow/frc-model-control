@@ -2,17 +2,27 @@ import numpy as np
 from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
 import arm_dynamics
+import json
 
 # Parameters
-TIME_STEP = 0.05
-TOTAL_SECONDS: float = 5.0
+TIME_STEP = 0.005
+TOTAL_SECONDS: float = 0.5
 STEP_COUNT = int(TOTAL_SECONDS / TIME_STEP)
-initial_angle = 0  # initial angle (pointed straight to the right)
+initial_angle = -np.pi/2.0  # initial angle (pointed straight down)
 initial_velocity = 0 # initial velocity (not moving)
 
-# Solve the ODE using solve_ivp
+# load a control strategy
+strategy = json.loads(open('sleipnir_arm_strategy.json').read())
+def get_control(strategy: list[dict], time: float) -> dict:
+    for s in strategy:
+        if s['time'] >= time:
+            return s
+    print('No control found for time', time)
+    return strategy[-1]
+
+# Simulate the arm
 solution = solve_ivp(
-    lambda t,state: arm_dynamics.calc_derivatives(state[0], state[1], 0),
+    lambda t,state: arm_dynamics.calc_derivatives(state[0], state[1], get_control(strategy, t).get('control_torque', 0.0)),
     [0.0, TOTAL_SECONDS], 
     [initial_angle, initial_velocity], 
     t_eval=np.linspace(0, TOTAL_SECONDS, STEP_COUNT+1),  # Time points for evaluation

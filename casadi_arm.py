@@ -16,6 +16,7 @@ angles = states[0, :]
 velocities = states[1, :]
 control_voltages = opti.variable(1, STEP_COUNT)
 control_currents = opti.variable(1, STEP_COUNT)
+control_torques = arm_dynamics.motor.calc_torque_from_current(control_currents)
 
 # Constraints
 opti.subject_to(angles[0] == -np.pi/2.0)  # initial angle (pointed down)
@@ -60,7 +61,44 @@ ax2 = ax1.twinx()
 ax2.set_ylabel('current / voltage')
 ax2.plot(time[:-1], solved_control_voltages, label='voltage')
 ax2.plot(time[:-1], solved_control_currents, label='current')
+ax2.plot(time[:-1], opti.value(control_torques), label='torque')
 ax2.legend(loc='lower right')
 
 plt.show()
+
+# Save outputs in the format
+'''
+[
+    {
+        "time": 0.0,
+        "angle": 0.0,
+        "velocity": 0.0,
+        "control_voltage": 0.0,
+        "control_current": 0.0,
+        "control_torque": 0.0
+    }, 
+    {
+        "time": 0.005,
+        "angle": 0.0,
+        "velocity": 0.0,
+        "control_voltage": 0.0,
+        "control_current": 0.0,
+        "control_torque": 0.0
+    },
+    ...
+]
+'''
+import json
+with open('casadi_arm_strategy.json', 'w') as f:
+    json.dump([
+        {
+            "time": time[k],
+            "angle": solved_angles[k],
+            "velocity": solved_velocities[k],
+            "control_voltage": solved_control_voltages[k],
+            "control_current": solved_control_currents[k],
+            "control_torque": solution.value(control_torques)[k]
+        } for k in range(STEP_COUNT)
+    ], f, indent=4)
+
 

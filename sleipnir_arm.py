@@ -1,8 +1,6 @@
 from jormungandr.optimization import OptimizationProblem
-from jormungandr.autodiff import cos, sin
 import numpy as np
 import matplotlib.pyplot as plt
-import math
 import arm_dynamics
 
 # Parameters
@@ -60,3 +58,38 @@ ax2.plot(time[:-1], solved_efforts, label='effort (N)')
 ax2.legend(loc='lower right')
 
 plt.show()
+
+# Save outputs in the format
+'''
+[
+    {
+        "time": 0.0,
+        "angle": 0.0,
+        "velocity": 0.0,
+        "control_voltage": 0.0,
+        "control_current": 0.0,
+        "control_torque": 0.0
+    }, 
+    {
+        "time": 0.005,
+        "angle": 0.0,
+        "velocity": 0.0,
+        "control_voltage": 0.0,
+        "control_current": 0.0,
+        "control_torque": 0.0
+    },
+    ...
+]
+'''
+import json
+with open('sleipnir_arm_strategy.json', 'w') as f:
+    json.dump([
+        {
+            "time": time[k],
+            "angle": solved_angles[k],
+            "velocity": solved_velocities[k],
+            "control_voltage": 0.0,
+            "control_current": 0.0,
+            "control_torque": solved_efforts[k]
+        } for k in range(STEP_COUNT)
+    ], f, indent=4)
